@@ -16,16 +16,6 @@ async def on_ready():
     print(f'We have logged in as {bot.user}')
 
 @bot.command()
-async def q(ctx):
-    await ctx.send("potato")
-
-@bot.command()
-async def w(ctx):
-    
-    await ctx.send("aaaa")
-
-
-@bot.command()
 async def write(ctx):
     e = random.randint(1,5)
     with open(f'img/img{e}.png', 'rb') as f:
