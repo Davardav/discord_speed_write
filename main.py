@@ -3,6 +3,7 @@ import time
 import random
 from discord.ext import commands
 from bot_logic import text
+logged = False
 id_test = []
 id = []
 
@@ -14,6 +15,14 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     print(f'We have logged in as {bot.user}')
+    
+@bot.command()
+async def info(ctx):
+    await ctx.send("Доброго времени суток,это информация про бота")
+    await ctx.send("На данный момент сейчас работает только одна фукция")
+    await ctx.send("Пропишите '!write' для того что бы получить текст")
+    await ctx.send("Пропишите '!check текст' для того что бы отправить текст на проверку и получить результат")
+    await ctx.send("(пишите вместо пробелов -)")
 
 @bot.command()
 async def write(ctx):
