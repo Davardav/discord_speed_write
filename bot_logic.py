@@ -9,12 +9,10 @@ a2 = [a1[0].split( ),
       a1[2].split( ),
       a1[3].split( ),
       a1[4].split( )]
-print(a2)
-
 
 def text(text_num,t_w):
     score = 0
     for i in (a2[text_num - 1]):
-        if i in t_w:
+        if i in t_w.split('-'):
             score += 1
     return score
