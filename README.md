@@ -10,6 +10,7 @@
 - Discord
 - Random
 - Time
+- asyncio
 
 ## Референсы, которые мне пригодятся
 - [Референс 1](https://github.com/Davardav/Discord-Image-msm-Classification-Bot)
